@@ -1,0 +1,21 @@
+# ワークフローの名前
+name: Greeting Workflow
+
+# このワークフローが実行される「きっかけ（トリガー）」
+on:
+  # mainブランチにpushイベントがあった時
+  push:
+    branches: [ main ]
+
+# 実行される「仕事（ジョブ）」の集まり
+jobs:
+  # 「greeting-job」という名前の仕事
+  greeting-job:
+    # この仕事をどのOSの仮想マシンで実行するか
+    runs-on: ubuntu-latest
+    # 仕事の具体的な「手順（ステップ）」
+    steps:
+      # 手順1: "Say Hello"という名前のステップ
+      - name: Say Hello
+        # 実際に実行するコマンド
+        run: echo "Hello, World! GitHub Actionsが正常に実行されました！"
