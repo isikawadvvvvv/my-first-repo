@@ -1,4 +1,2 @@
-こんにちは、gittarouさん！
 このリポジトリは、GitとGitHubを学ぶためのものです。
-
-ydudyukg
+差分テスト
